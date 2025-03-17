@@ -29,10 +29,35 @@ This procedure inserts an element **ITEM** into a queue.
      - Set `REAR = REAR + 1`.  
 
 3. **Insert the new element:**  
-   - Set `QUEUE[REAR] = ITEM`.  
+   - Set `QUEUE[REAR] = ITEM`.(This insert new element)  
 
 4. **Return.**  
 
 ---
+
+## Queue Deletion[Pseudocode].
+
+
+---
+### **QDELETE(QUEUE, FRONT, REAR,N, ITEM)**  
+This procedure delets an element from queue and assigns it to the variable **ITEM**.  
+#### **Steps:**
+1. **Check if the queue is already empty:**  
+   - **If** `FRONT = Null`     
+     - **Then:** Print `"Underflow"` and **Return**.
+2. **Set, `ITEM= QUEUE[FRONT]`**
+3. **Find the new value of FRONT:**
+   - **If** `FRONT = REAR` (Queue has only one element to start).  
+     - Set `FRONT = Null` and `REAR = Null`.  
+   - **Else If** `FRONT = N`,  
+     - Set `FRONT=1`.  
+   - **Else**,  
+     - Set `FRONT = FRONT + 1`.(End of if structure).
+4. **Return.**  
+
+--- 
+   
+
+
 
 
