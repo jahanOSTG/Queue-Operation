@@ -57,7 +57,7 @@ This procedure delets an element from queue and assigns it to the variable **ITE
 
 --- 
 # Queue Visualization
-![Queue Example](images/output.png)
+![Queue Example](output.png)
    
 
 
