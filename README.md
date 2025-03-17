@@ -7,18 +7,32 @@ The queue is implemented using an array with operations like Insertion (Enqueue)
 - **Display:** Show current elements in the queue also show front and rear pointers.
 
 ## Queue Insertion[Pseudocode].
-### QINSERT(QUEUE,FRONT,REAR,ITEM)
-This procedure inserts an element ITEM into a queue.[Queue already fill]
-1. __If__ FRONT = 1 and REAR = N, or<br>
-   __If__ FRONT= REAR + 1,<br>
-   - Then: Write: overflow, and Return.
-2. [Find new value of REAR]<br>
-   __If__ Front:= Null,then :[Queue initially empty.]<br>
-   - Set, FRONT:=1 and REAR:=1.
-   __Else If__ REAR:=N, then:
-   - set,REAR:=1
-   __Else:__
-   - Set REAR= REAR+1. [End of IF structure].
-3. Set QUEUE[REAR]:= ITEM [This inserts new element].
-4. Return.
-    
+
+
+---
+
+### **QINSERT(QUEUE, FRONT, REAR, ITEM)**  
+This procedure inserts an element **ITEM** into a queue.  
+
+#### **Steps:**
+1. **Check if the queue is full:**  
+   - **If** `FRONT = 1` and `REAR = N`, or  
+   - **If** `FRONT = REAR + 1`,  
+     - **Then:** Print `"Overflow"` and **Return**.  
+
+2. **Find the new value of REAR:**  
+   - **If** `FRONT = NULL` (Queue is initially empty),  
+     - Set `FRONT = 1` and `REAR = 1`.  
+   - **Else If** `REAR = N`,  
+     - Set `REAR = 1`.  
+   - **Else**,  
+     - Set `REAR = REAR + 1`.  
+
+3. **Insert the new element:**  
+   - Set `QUEUE[REAR] = ITEM`.  
+
+4. **Return.**  
+
+---
+
+
